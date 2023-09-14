@@ -24,7 +24,7 @@ button{
 }
 button:hover {
     background-color: #102f5e; 
-    color: #FFF;   
+      
 }
 button:hover > i {
     color: #FFF;
@@ -38,6 +38,10 @@ button i {
 input,select {
     padding: 0.25rem 0.5rem;
 }
+.hide{
+    display: none;
+}
+/* todo header*/
 .todo-container{
     max-width: 450px;
     margin: 3rem auto ;
@@ -50,6 +54,7 @@ input,select {
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
 }
+/* todo form*/
 #todo-form, #edit-form{
     padding: 1rem;
     border-bottom: 1px solid #ccc;
@@ -67,6 +72,7 @@ input,select {
 }
 #cancel-edit-btn{
     margin-top: 1rem;
+    color: #444;
 }
 #toolbar{
     padding: 1rem;
@@ -102,6 +108,7 @@ input,select {
 #filter select{
     flex: 1;
 }
+/*  todo list*/
 .todo{
     display: flex;
     justify-content: space-around;

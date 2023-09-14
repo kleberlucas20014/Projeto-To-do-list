@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="styles.css">
@@ -14,49 +15,50 @@
 <body>
         <div class="todo-container" >
             <header>
-                <h1>app to-do</h1> 
+                <h1>To-do List</h1> 
             </header>
             <form id="todo-form">
                 <p>Adicione a sua tarefa:</p>
                 <div class="form-control">
                     <input type="text" id="todo-input" placeholder="o que voce vai fazer?">
-                        <button type="submit">
-                            <i class="fa-thin fa-plus"></i>
-                        </button>
+                    <button type="submit">
+                        <i class="fa-thin fa-plus"></i>
+                    </button>
                 </div>
             </form>
             <form id="edit-form" class="hide">
                 <p>Edite a sua tarefa:</p>
                 <div class="form-control">
-                        <input type="text" id="edit-input"/>
-                        <button type="submit">
-                            <i class="fa-solid fa-check-double"></i> 
-                        </button>
+                    <input type="text" id="edit-input"/>
+                    <button type="submit">
+                        <i class="fa-solid fa-check-double"></i> 
+                    </button>
                 </div>
-                <button id="cancel-edit-btn">cancelar</button>
+                <button id="cancel-edit-btn">Cancelar</button>
             </form>
             <div id="toolbar">
                 <div id="search">
                     <h4>Pesquisar:</h4>
                     <form>
-                        <input type="text" id="search-input" placeholder="buscar">
+                        <input type="text" id="search-input" placeholder="buscar..." />
                         <button id="erase-buttom">
-                        <i class="fa-solid fa-delete-left"></i> 
+                         <i class="fa-solid fa-delete-left"></i> 
                         </button>
                     </form>
                 </div>
                     <div id="filter">
-                        <h4>filtrar:</h4>
+                        <h4>Filtrar:</h4>
                         <select  id="filter-select">
                             <option value="all">Todos</option>
                             <option value="done">Feitos</option>
-                            <option value="todo">a Fazer</option>
+                            <option value="todo">A Fazer</option>
                         </select>
                     </div>
                 </div>
                 <div id="todo-list">
-                    <div class="todo done">
-                        <h3>estudar javascript</h3>
+
+                  <div class="todo">
+                        <h3>Estudar javascript</h3>
                         <button class="finish-todo">
                             <i class="fa-solid fa-check"></i>
                         </button>
@@ -67,6 +69,18 @@
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
+                    <div class="todo">
+                        <h3>Estudar backend</h3>
+                        <button class="finish-todo">
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+                        <button class="edit-todo">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button class="remove-todo">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>    
                 </div>
         </div>
 </body>
