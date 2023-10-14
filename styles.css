@@ -9,7 +9,9 @@
   
   body {
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
-    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
   
   }
   
